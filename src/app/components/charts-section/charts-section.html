@@ -1,0 +1,104 @@
+<!-- Charts Section -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+  <!-- Chart 1: Volume -->
+  <div
+    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm flex flex-col"
+  >
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">
+          Ticket Volume
+        </h3>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Last 7 days activity</p>
+      </div>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-md text-xs font-bold"
+          >Weekly</span
+        >
+      </div>
+    </div>
+    <div class="relative w-full h-48 mt-auto">
+      <!-- Simplified Area Chart Representation -->
+      <svg
+        class="w-full h-full"
+        fill="none"
+        preserveAspectRatio="none"
+        viewBox="0 0 478 150"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#137fec" stop-opacity="0.25" />
+            <stop offset="100%" stop-color="#137fec" stop-opacity="0" />
+          </linearGradient>
+        </defs>
+
+        <!-- Area -->
+        <path
+          d="M0 109C18 109 18 21 36 21C54 21 54 41 72 41C90 41 90 93 108 93C127 93 127 33 145 33C163 33 163 101 181 101C199 101 199 61 217 61C236 61 236 45 254 45C272 45 272 121 290 121C308 121 308 149 326 149C344 149 344 1 363 1C381 1 381 81 399 81C417 81 417 129 435 129C453 129 453 25 472 25V150H0Z"
+          fill="url(#chartGradient)"
+        />
+
+        <!-- Line -->
+        <path
+          d="M0 109C18 109 18 21 36 21C54 21 54 41 72 41C90 41 90 93 108 93C127 93 127 33 145 33C163 33 163 101 181 101C199 101 199 61 217 61C236 61 236 45 254 45C272 45 272 121 290 121C308 121 308 149 326 149C344 149 344 1 363 1C381 1 381 81 399 81C417 81 417 129 435 129C453 129 453 25 472 25"
+          stroke="#137fec"
+          stroke-width="3"
+          stroke-linecap="round"
+          fill="none"
+        />
+      </svg>
+    </div>
+    <div class="flex justify-between mt-4 border-t border-slate-100 dark:border-slate-800 pt-4">
+      <span class="text-xs font-medium text-slate-400">Mon</span>
+      <span class="text-xs font-medium text-slate-400">Tue</span>
+      <span class="text-xs font-medium text-slate-400">Wed</span>
+      <span class="text-xs font-medium text-slate-400">Thu</span>
+      <span class="text-xs font-medium text-slate-400">Fri</span>
+      <span class="text-xs font-medium text-slate-400">Sat</span>
+      <span class="text-xs font-medium text-slate-400">Sun</span>
+    </div>
+  </div>
+  <!-- Chart 2: Requests by Department -->
+  <div
+    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm flex flex-col"
+  >
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">
+          Requests by Dept
+        </h3>
+        <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Total 85 requests</p>
+      </div>
+      <div class="flex gap-2">
+        <span
+          class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 rounded-md text-xs font-bold"
+          >Monthly</span
+        >
+      </div>
+    </div>
+    <div class="grid grid-cols-[auto_1fr] items-center gap-x-4 gap-y-6 flex-1">
+      <span class="text-xs font-bold text-slate-500 dark:text-slate-400 w-20">Sales</span>
+      <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+        <div class="bg-primary h-full rounded-full" style="width: 65%"></div>
+      </div>
+      <span class="text-xs font-bold text-slate-500 dark:text-slate-400 w-20">Marketing</span>
+      <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+        <div class="bg-indigo-500 h-full rounded-full" style="width: 45%"></div>
+      </div>
+      <span class="text-xs font-bold text-slate-500 dark:text-slate-400 w-20">Eng</span>
+      <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+        <div class="bg-cyan-500 h-full rounded-full" style="width: 80%"></div>
+      </div>
+      <span class="text-xs font-bold text-slate-500 dark:text-slate-400 w-20">HR</span>
+      <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+        <div class="bg-orange-500 h-full rounded-full" style="width: 25%"></div>
+      </div>
+      <span class="text-xs font-bold text-slate-500 dark:text-slate-400 w-20">Support</span>
+      <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-3 overflow-hidden">
+        <div class="bg-emerald-500 h-full rounded-full" style="width: 55%"></div>
+      </div>
+    </div>
+  </div>
+</div>

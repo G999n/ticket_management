@@ -1,0 +1,379 @@
+<!-- Split Content Section -->
+<div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+  <!-- Left Column: Data Table (70% feel) -->
+  <div
+    class="xl:col-span-2 flex flex-col bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden"
+  >
+    <!-- Table Header/Tabs -->
+    <div class="border-b border-slate-200 dark:border-slate-800 px-6 pt-6">
+      <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-4">
+        <h3 class="text-slate-900 dark:text-white text-lg font-bold">Recent Tickets</h3>
+        <div class="flex gap-2">
+          <button
+            class="px-3 py-1.5 border border-slate-200 dark:border-slate-700 rounded-md text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 dark:text-slate-300"
+          >
+            <span class="material-symbols-outlined text-base">filter_list</span>
+            Filter
+          </button>
+          <button
+            class="px-3 py-1.5 border border-slate-200 dark:border-slate-700 rounded-md text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 dark:text-slate-300"
+          >
+            <span class="material-symbols-outlined text-base">download</span>
+            Export
+          </button>
+        </div>
+      </div>
+      <div class="flex gap-6">
+        <button class="pb-3 border-b-2 border-primary text-primary font-semibold text-sm">
+          My Assigned
+        </button>
+        <button
+          class="pb-3 border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 font-medium text-sm transition-colors"
+        >
+          Unassigned
+        </button>
+        <button
+          class="pb-3 border-b-2 border-transparent text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 font-medium text-sm transition-colors"
+        >
+          Pending Review
+        </button>
+      </div>
+    </div>
+    <!-- Table Content -->
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr
+            class="bg-slate-50 dark:bg-slate-800/50 text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider border-b border-slate-200 dark:border-slate-800"
+          >
+            <th class="p-4 w-10">
+              <input class="rounded border-slate-300 text-primary focus:ring-0" type="checkbox" />
+            </th>
+            <th class="p-4">ID</th>
+            <th class="p-4">Subject</th>
+            <th class="p-4">Requester</th>
+            <th class="p-4">Status</th>
+            <th class="p-4">Priority</th>
+            <th class="p-4">Date</th>
+            <th class="p-4"></th>
+          </tr>
+        </thead>
+        <tbody class="text-sm divide-y divide-slate-100 dark:divide-slate-800">
+          <!-- Row 1 -->
+          <tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+            <td class="p-4">
+              <input class="rounded border-slate-300 text-primary focus:ring-0" type="checkbox" />
+            </td>
+            <td class="p-4 font-mono text-slate-500 dark:text-slate-400">#TR-2034</td>
+            <td class="p-4 font-medium text-slate-900 dark:text-white">
+              API Authentication Failure on v2
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="size-6 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of Sarah"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAC_DKaab23wQZqby7ZkPNcoMRqI9xjSegVkFnlluPSuiNP7jBBY2NhEaAmUy9WAv8lfnetK6Dul_FE6sfplNIqJdUGME3qXtWImz_ikaAt1b6OplCFGsG-JqSPTP2oOd0CK5g18FIVW7ycbMQfk0pbqXoU1o0HsiBdQ66OUfVx4iMoVNN7-tayZlYBKtZz8rh-G7p1FH2C-pBmOM2SXwb0JpO_cGxVw4hD0_XmaT34iRUZ5tIUsvRJTBojA0qdCQHQ5eITw7UeC7M');
+                  "
+                ></div>
+                <span class="text-slate-700 dark:text-slate-300">Sarah K.</span>
+              </div>
+            </td>
+            <td class="p-4">
+              <span
+                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
+                >In Progress</span
+              >
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-1 text-rose-600 dark:text-rose-400 font-medium">
+                <span class="material-symbols-outlined text-lg">priority_high</span>
+                High
+              </div>
+            </td>
+            <td class="p-4 text-slate-500 dark:text-slate-400">Oct 24</td>
+            <td class="p-4 text-right">
+              <button class="text-slate-400 hover:text-primary">
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+            </td>
+          </tr>
+          <!-- Row 2 -->
+          <tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+            <td class="p-4">
+              <input class="rounded border-slate-300 text-primary focus:ring-0" type="checkbox" />
+            </td>
+            <td class="p-4 font-mono text-slate-500 dark:text-slate-400">#TR-2033</td>
+            <td class="p-4 font-medium text-slate-900 dark:text-white">
+              Update Login Screen Assets
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="size-6 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of Mike"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAcg0TYNwTlyJ33R5WV_5d409bIsXEKaN6fAVDTpdjB4in_Q02wvZZOYfHWaZU3le_483wT82RB6xztDuHVQB8G0krDmHzP9dErs-66PVIqiXUpQ-jxfjRaU9dRoAIyj1OiD0r2tIYSWlSZ23fMpRru4HhYL0P9th2XPQApOUBLAmJTtL2IBO-QcMWLVFeL6LrO10NM1yGvtAJnYEghOM7iyyQg1-XQl6PyYgVas-RIvVxAWr4eW6vgMSPOgoGFnZldLYLTAGfnj_0');
+                  "
+                ></div>
+                <span class="text-slate-700 dark:text-slate-300">Mike R.</span>
+              </div>
+            </td>
+            <td class="p-4">
+              <span
+                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-700 dark:text-slate-300"
+                >Open</span
+              >
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-1 text-amber-600 dark:text-amber-400 font-medium">
+                <span class="material-symbols-outlined text-lg">remove</span>
+                Medium
+              </div>
+            </td>
+            <td class="p-4 text-slate-500 dark:text-slate-400">Oct 23</td>
+            <td class="p-4 text-right">
+              <button class="text-slate-400 hover:text-primary">
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+            </td>
+          </tr>
+          <!-- Row 3 -->
+          <tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+            <td class="p-4">
+              <input class="rounded border-slate-300 text-primary focus:ring-0" type="checkbox" />
+            </td>
+            <td class="p-4 font-mono text-slate-500 dark:text-slate-400">#TR-2032</td>
+            <td class="p-4 font-medium text-slate-900 dark:text-white">
+              Database Migration Rollback
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="size-6 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of Jenny"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8WqAwWZZ391B00rb6vir8yERZSoUU-yvJ_BBTH8q-rjC4oSfquRiwMfpIYhIE-wr2zuaTmcJDHALF6dzB9OyJZC4z8UbES8t5qQm2dwYUuaj6y5K92pA85AtQFpn_57E_KkIkIgSIe1NkhHQjKjsrcXu2fgvbszFzVSM7UJqSCrqMeFMgGK_3279IpvFG-tZ5ctqk-DKPQ36g0UZquBWYh77Q6ZpXhSsMNDCsKkq2NgRlf_uOVij_IY2nej1P5FSLW_osy2AzCVw');
+                  "
+                ></div>
+                <span class="text-slate-700 dark:text-slate-300">Jenny W.</span>
+              </div>
+            </td>
+            <td class="p-4">
+              <span
+                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300"
+                >Resolved</span
+              >
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-1 text-rose-600 dark:text-rose-400 font-medium">
+                <span class="material-symbols-outlined text-lg">priority_high</span>
+                Critical
+              </div>
+            </td>
+            <td class="p-4 text-slate-500 dark:text-slate-400">Oct 23</td>
+            <td class="p-4 text-right">
+              <button class="text-slate-400 hover:text-primary">
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+            </td>
+          </tr>
+          <!-- Row 4 -->
+          <tr class="group hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+            <td class="p-4">
+              <input class="rounded border-slate-300 text-primary focus:ring-0" type="checkbox" />
+            </td>
+            <td class="p-4 font-mono text-slate-500 dark:text-slate-400">#TR-2031</td>
+            <td class="p-4 font-medium text-slate-900 dark:text-white">
+              Export feature throwing 500 error
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-2">
+                <div
+                  class="size-6 rounded-full bg-cover bg-center"
+                  data-alt="Avatar of Dave"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCzbGG5cCfY5egNhR1KTBi_TMeSr9LWM440tIcreveTs_Taps5VQm0dwETAyBawr4LXi1tNpZOpaNRarVEApIRUxAKh67U2DG0MVzqHJZtj9WVfUIr77KozlKFJ0aY_W5JlRMSwgBMv2Uo9rHXJ4-TC_I0mRhe7fpjWjm0akQokmBMM8HmONCvjFNPo9wgm8TWTWR0hUZ64yRQRR_5P8kE7TP0hHtZjI1HgprQJqsFXbtdodoyyoEHGw1KVALWoyAB8j5yH9cubyM');
+                  "
+                ></div>
+                <span class="text-slate-700 dark:text-slate-300">Dave B.</span>
+              </div>
+            </td>
+            <td class="p-4">
+              <span
+                class="inline-flex items-center px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300"
+                >In Progress</span
+              >
+            </td>
+            <td class="p-4">
+              <div class="flex items-center gap-1 text-slate-500 dark:text-slate-400 font-medium">
+                <span class="material-symbols-outlined text-lg">arrow_downward</span>
+                Low
+              </div>
+            </td>
+            <td class="p-4 text-slate-500 dark:text-slate-400">Oct 22</td>
+            <td class="p-4 text-right">
+              <button class="text-slate-400 hover:text-primary">
+                <span class="material-symbols-outlined">more_vert</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Pagination -->
+    <div
+      class="flex items-center justify-between px-6 py-4 border-t border-slate-200 dark:border-slate-800"
+    >
+      <p class="text-sm text-slate-500 dark:text-slate-400">Showing 1-4 of 24 items</p>
+      <div class="flex gap-2">
+        <button
+          class="size-8 flex items-center justify-center rounded border border-slate-200 dark:border-slate-700 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 disabled:opacity-50"
+        >
+          <span class="material-symbols-outlined text-sm">chevron_left</span>
+        </button>
+        <button
+          class="size-8 flex items-center justify-center rounded border border-slate-200 dark:border-slate-700 bg-primary text-white"
+        >
+          1
+        </button>
+        <button
+          class="size-8 flex items-center justify-center rounded border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+        >
+          2
+        </button>
+        <button
+          class="size-8 flex items-center justify-center rounded border border-slate-200 dark:border-slate-700 text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800"
+        >
+          3
+        </button>
+        <button
+          class="size-8 flex items-center justify-center rounded border border-slate-200 dark:border-slate-700 text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800"
+        >
+          <span class="material-symbols-outlined text-sm">chevron_right</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Right Column: Team Queries & System Status (30% feel) -->
+  <div class="flex flex-col gap-6">
+    <!-- Team Queries Widget -->
+    <div
+      class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm p-6 flex-1"
+    >
+      <div class="flex justify-between items-center mb-6">
+        <h3 class="text-slate-900 dark:text-white text-lg font-bold">Team Queries</h3>
+        <span class="bg-red-50 text-red-600 text-xs font-bold px-2 py-1 rounded-full">3 New</span>
+      </div>
+      <div class="flex flex-col gap-6">
+        <!-- Query Item 1 -->
+        <div class="flex gap-3">
+          <div
+            class="size-10 rounded-full bg-cover bg-center shrink-0"
+            data-alt="Avatar of Marketing Manager"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVef25mHgb4o_3Rmj_TZjwKmiRBXIK_o9SpCseGAsfnhHHsTopwhPAHewV5Ty0anK4H4k-voHpLCvweaLM9OyoyoyHdt77BVv5qewTZM0P7rqvHHry052rjkaEnTRVg2ZigBziOYBE46T-ODhv7VocjGVNLYYad2k-16hVdZ67woax_kytOPhyWFysU050QyhHJwGW7iBGJs0QcDOR2Y7z7Nh_1GTb_XqiFEK9dvy494DwLh36BjOkrgRdAUjrnOPsQJVl22dxurM');
+            "
+          ></div>
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-baseline w-full">
+              <p class="text-sm font-bold text-slate-900 dark:text-white">Kelly (Marketing)</p>
+              <span class="text-xs text-slate-400">10m ago</span>
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Can we push the landing page update to production before noon?
+            </p>
+            <button class="text-primary text-xs font-semibold self-start mt-1 hover:underline">
+              Reply
+            </button>
+          </div>
+        </div>
+        <!-- Query Item 2 -->
+        <div class="flex gap-3">
+          <div
+            class="size-10 rounded-full bg-cover bg-center shrink-0"
+            data-alt="Avatar of Product Owner"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwy4XEF7aWudabC4VqAbG0losoSYzq19xd4LGwzgEjoc3hc0PQLed9OYmxbBokZzEV_-HVfyHC0awmi6fPzK3gmMd4JwYTN6jVZdpBYkOdci52g3ADZri7uvcoIKMdWPWpyu4ObtguOZbN78L3tcNhimf3c4mzHpykd_VSzTlK2RolPOknGv6fuq78Ltdoef86p3slms79oiF_RDYhZYkSS8tqOWvOWVR9DAks0p5KBX3Fq3mH7CNBulsO2xPKL6W--KfLU96QYeE');
+            "
+          ></div>
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-baseline w-full">
+              <p class="text-sm font-bold text-slate-900 dark:text-white">James (Product)</p>
+              <span class="text-xs text-slate-400">1h ago</span>
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Regarding ticket #2034, is that blocking the mobile release?
+            </p>
+            <button class="text-primary text-xs font-semibold self-start mt-1 hover:underline">
+              Reply
+            </button>
+          </div>
+        </div>
+        <!-- Query Item 3 -->
+        <div class="flex gap-3 opacity-60">
+          <div
+            class="size-10 rounded-full bg-cover bg-center shrink-0"
+            data-alt="Avatar of Sales Lead"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAhDU9j2xzzqzjHejIERMYxuOqk9nTZdZEqETqEHF1vKJxSCu4y02wA69wbTF8ZG1pBqr3WGi0QvHVU_X1N3oOAkonXgvxpt96OI5hCLuwT0OvzGAlUCL3zDPPsJgSdG4DMlyDWCSP3osOEqVBdJqUUaG2Lq-C4pqSD_rxOU3Tv1vpfTAwMDjizlLb0KAdZkWb2FyGSnwY1csYqpzePLyqJUAlTbBBJGohytrMO0_KIeR5Ih6Bv-6dyrwjbN1ySQHDENVmprQkr1FQ');
+            "
+          ></div>
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-baseline w-full">
+              <p class="text-sm font-bold text-slate-900 dark:text-white">Marcus (Sales)</p>
+              <span class="text-xs text-slate-400">2h ago</span>
+            </div>
+            <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Client X is asking for the export logs feature status.
+            </p>
+            <div class="flex items-center gap-1 text-xs text-emerald-600 font-medium mt-1">
+              <span class="material-symbols-outlined text-[14px]">check_circle</span>
+              Replied
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="w-full mt-6 py-2 border border-slate-200 dark:border-slate-700 rounded-lg text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors"
+      >
+        View All Messages
+      </button>
+    </div>
+    <!-- System Health Widget -->
+    <div
+      class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl shadow-md p-6 text-white relative overflow-hidden"
+    >
+      <div class="absolute top-0 right-0 p-4 opacity-10">
+        <span class="material-symbols-outlined text-9xl">dns</span>
+      </div>
+      <div class="relative z-10">
+        <h3 class="text-lg font-bold mb-4">System Health</h3>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="size-2 rounded-full bg-emerald-400 animate-pulse"></div>
+              <span class="text-sm font-medium text-slate-200">API Gateway</span>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">99.99%</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="size-2 rounded-full bg-emerald-400 animate-pulse"></div>
+              <span class="text-sm font-medium text-slate-200">Database Cluster</span>
+            </div>
+            <span class="text-xs font-mono text-emerald-400">Operational</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2">
+              <div class="size-2 rounded-full bg-amber-400"></div>
+              <span class="text-sm font-medium text-slate-200">Storage S3</span>
+            </div>
+            <span class="text-xs font-mono text-amber-400">High Load</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
