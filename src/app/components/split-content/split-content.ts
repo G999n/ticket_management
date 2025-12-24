@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-split-content',
   imports: [],
   templateUrl: './split-content.html',
-  styleUrl: './split-content.scss',
+  styleUrl: './split-content.css',
 })
 export class SplitContent {
 

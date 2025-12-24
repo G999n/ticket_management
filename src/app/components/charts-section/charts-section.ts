@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-charts-section',
   imports: [],
   templateUrl: './charts-section.html',
-  styleUrl: './charts-section.scss',
+  styleUrl: './charts-section.css',
 })
 export class ChartsSection {
 

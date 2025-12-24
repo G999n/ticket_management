@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-home-page',
   imports: [ChartsSection, KpiCards, SplitContent, RouterLink],
   templateUrl: './home-page.html',
-  styleUrl: './home-page.scss',
+  styleUrl: './home-page.css',
 })
 export class HomePage {
 

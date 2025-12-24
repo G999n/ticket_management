@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-create-ticket',
   imports: [],
   templateUrl: './create-ticket.html',
-  styleUrl: './create-ticket.scss',
+  styleUrl: './create-ticket.css',
 })
 export class CreateTicket {
 

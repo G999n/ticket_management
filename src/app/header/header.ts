@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-header',
   imports: [FormsModule],
   templateUrl: './header.html',
-  styleUrl: './header.scss',
+  styleUrl: './header.css',
 })
 export class Header {
   

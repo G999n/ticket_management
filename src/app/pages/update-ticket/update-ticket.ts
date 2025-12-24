@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-update-ticket',
   imports: [CommonModule],
   templateUrl: './update-ticket.html',
-  styleUrl: './update-ticket.scss',
+  styleUrl: './update-ticket.css',
 })
 export class UpdateTicket {
   activeTab: 'internal' | 'partner' = 'internal';

@@ -1,3 +1,29 @@
+@import 'tailwindcss';
+
+/* Enable class-based dark mode (equivalent to darkMode: 'class') */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Theme extensions */
+@theme {
+  /* Colors */
+  --color-primary: #137fec;
+  --color-background-light: #f6f7f8;
+  --color-background-dark: #101922;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #1a2632;
+  --color-border-light: #e7edf3;
+  --color-border-dark: #2a3b4d;
+
+  /* Font family */
+  --font-display: Inter, sans-serif;
+
+  /* Border radius */
+  --radius: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
 /* Global font */
 html {
   font-family: 'Inter', sans-serif;
